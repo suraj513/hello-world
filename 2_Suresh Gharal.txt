@@ -1,0 +1,33 @@
+int main()
+{
+    int i,len=0;
+    int capital=0,small=0;
+    char ch[100];
+    printf("Enter the String:\n");
+    gets(ch);
+    for(i=0; ch[i]!=0; i++){
+if(ch[i]>='A' && ch[i]<='Z'){
+    capital++;
+}
+else if(ch[i]>='a' && ch[i]<='z'){
+    small++;
+}
+    }
+printf("small letters: %d",small);
+printf("\capital letters: %d",capital);
+getch();
+ len = sizeof(ch)/sizeof(ch[0]);
+ for(i = 0; i < len; i++)
+ if(iscapital(str[i]))
+{
+str[i] = tosmall(ch[i]);
+}
+else if(issmall(str[i]))
+{
+str[i] = tosmall(str[i]);    
+}
+}
+printf("String after case conversion : %s", ch);  
+  
+    return 0;
+}
